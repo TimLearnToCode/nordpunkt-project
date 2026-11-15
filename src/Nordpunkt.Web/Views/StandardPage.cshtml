@@ -1,0 +1,17 @@
+﻿
+@using Umbraco.Cms.Web.Common.PublishedModels
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<StandardPage>
+
+@{
+    Layout = "Master.cshtml";
+}
+
+<article class="w-full px-4 py-8 sm:px-0">
+    <h1 class="mb-6 text-3xl font-bold text-np-ink">
+        @Model.Value("rubrik")
+    </h1>
+
+    <div class="prose max-w-none text-np-ink">
+        @Model.Value("brodtext")
+    </div>
+</article>
